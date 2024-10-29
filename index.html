@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录界面</title>
+    <style>
+        /* 弹性盒子布局 */
+        .flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* 底部栏 */
+        .db{
+            text-align: center;
+            border-radius: 20px;
+            background-color:#f5f5f5;
+            width:auto; 
+            height:150px;
+            margin: 0 0 0 0;
+        }
+        /* 导航栏 */
+        .dh{
+            width: 800px;
+            height: 75px;
+            background-color: #f5f5f5;
+            border-radius: 20px;
+        }
+        /* 链接访问 */
+        a:link, a:visited{
+            color: #5e5e5f;
+        }
+        /* 内容区域 */
+        .nr{
+            display: flex;
+            width: 800px;
+            height: 500px; 
+            background-color: #f5f5f5; 
+            border-radius: 20px;      
+        }
+        /* 居中属性 */
+        .center{
+            align-items: center;   /* 水平居中 */
+            justify-content: center;  /* 垂直居中 */
+        }
+        .shadow{
+            box-shadow:#d0d0d1 1px 1px 5px;  /* 阴影属性 */
+            border-radius: 20px;  /* 圆角属性*/
+        }
+        /* 底部按钮 */
+        .but{
+            display: inline-block;  /* 切换为行内块级标签 */
+            width: 175px;
+            height: 40px;
+            font-size: 16px;  /* 字体大小 */
+            background-color: #ddbaff;
+            border: 1px solid #d0d0d1;  /* 边框线 */
+            cursor: pointer;  /* 改变鼠标指针 */
+            border-radius: 4px;  /* 圆角属性 */
+            box-shadow: #d79cec 1px 1px 1px;/* 阴影属性 */
+        }
+        /* 按钮点击效果 */
+        button:hover{
+            background-color: #d79cec;
+        }
+        /* 标记文本区域 */
+        .span{
+            font-size: larger; 
+            font-weight: 800;
+        }
+        /* 表单区域 */
+        .bdq{
+            padding:20px; /* 内部填充 */
+            width: 200px; 
+            height: 300px; 
+            flex-direction: column;/* 切换行列 */
+            background-color: #ffffff;
+            border-radius: 20px;
+            border: 1 solid black;
+        }
+         /* 表单区域 */
+        .bdqy{
+            padding:20px; 
+            width: 200px; 
+            height: 120px; 
+            flex-direction: column;
+            background-color: #ffffff;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body style="background-color: #d5d5d5;">
+    <div>
+        <div style="width: 800px;height: 825px; margin: 0 auto;">
+            <br>
+            <!-- 导航栏 -->
+            <div class="dh flex shadow">
+                <h1 class="center">欢迎登录</h1>
+            </div>
+            <!-- 内容区 -->
+            <div class="nr shadow center" style="margin:10px 0 10px 0;">
+                    <div class="flex" style="margin: 0 100px 0 10px;">
+                        <img style="box-shadow: 2px 2px 10px; border-radius: 20px;" src="images/tp.jpg" alt="tp" width="300px" height="275px" >
+                    </div>
+    
+                    <div class="flex center shadow bdq">
+                        <!-- 用户名输入框 -->
+                        <form action="" method="post" class="flex center bdqy">
+                            <label for="username"><span class="span">用户名</span></label>
+                            <input style="margin: 5px;" type="username" name="username" id="uname" placeholder="用户名/手机号/昵称" required>
+                            <!-- 密码输入框 -->
+                            <label for="password"><span class="span">密码</span></label>    
+                            <input style="margin: 5px;" type="password" name="password" id="password" placeholder="请输入密码" required><br>
+                            <!-- 用户协议 -->
+                            <div style="font-size: x-small;margin: 2px;margin-top: 0px;" >
+                                <form action="#">
+                                    <input type="radio" required>我已阅读并同意《用户协议》
+                                </form>
+                            </div>
+                            <!-- 登陆按钮 -->
+                            <button class="but" type="submit">登录</button>
+                            <!-- 注册 -->
+                            <div style="font-size:smaller; margin: 10px;">
+                                <a href="register.html" target="_blank">立即注册</a>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+            <!-- 底部栏 -->
+            <div class="db shadow">
+                <br><br>
+                <a href="#">关于我们</a>&nbsp;
+                <span>|</span>&nbsp;&nbsp;
+                <a href="#">联系我们</a>&nbsp;
+                <span>|</span>&nbsp;&nbsp;
+                <a href="#">人才招聘</a>&nbsp;
+                <span>|</span>&nbsp;&nbsp;
+                <a href="#">商家入驻</a>&nbsp;
+                <span>|</span>&nbsp;&nbsp;
+                <a href="#">广告服务</a>&nbsp;
+                <span>|</span>&nbsp;&nbsp;
+                <a href="#">友情链接</a>&nbsp;
+                <span>|</span>&nbsp;&nbsp;
+                <a href="#">销售联盟</a>&nbsp;
+                <span>|</span>&nbsp;&nbsp;
+                <span><a href="#">English Site</a></span>
+                <br><br>
+                <span style="font-size: x-small;">Copyright&nbsp;&#9400;&nbsp;2021-2026 全网 xxx.com 版权所有</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
